@@ -1,0 +1,22 @@
+# macOS / OS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Font tooling cache (the shipped .woff2 in assets/fonts/ are tracked;
+# this only ignores transient caches a subsetting/build tool might emit)
+.fontcache/
+assets/fonts/.cache/
+*.woff2.tmp
+
+# Logs / local junk
+*.log
+node_modules/
