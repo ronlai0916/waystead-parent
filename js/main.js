@@ -18,12 +18,17 @@
   // Progressive enhancement: swap the no-js marker so CSS can rely on JS.
   document.documentElement.classList.remove("no-js");
 
+  // Keep the footer copyright year current.
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector("#primary-nav");
   if (!toggle || !nav) return;
 
   function setOpen(open) {
     toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     nav.setAttribute("data-open", String(open));
   }
 

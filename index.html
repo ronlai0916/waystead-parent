@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Waystead — Know the way.</title>
-  <meta name="description" content="Waystead is a family of calm, purposeful tools that help families and learners know the way — starting with Waystead Scheduler and Waystead Learning." />
+  <meta name="description" content="A family of products that help you find your footing and keep moving forward — one waypoint at a time." />
   <link rel="canonical" href="https://waystead.co.uk/" />
   <meta name="theme-color" content="#FAF8F3" />
 
@@ -19,7 +19,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Waystead" />
   <meta property="og:title" content="Waystead — Know the way." />
-  <meta property="og:description" content="A family of calm, purposeful tools that help families and learners know the way." />
+  <meta property="og:description" content="A family of products that help you find your footing and keep moving forward — one waypoint at a time." />
   <meta property="og:url" content="https://waystead.co.uk/" />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:image" content="https://waystead.co.uk/assets/icons/og-image.png" />
@@ -30,7 +30,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Waystead — Know the way." />
-  <meta name="twitter:description" content="A family of calm, purposeful tools that help families and learners know the way." />
+  <meta name="twitter:description" content="A family of products that help you find your footing and keep moving forward — one waypoint at a time." />
   <meta name="twitter:image" content="https://waystead.co.uk/assets/icons/og-image.png" />
   <meta name="twitter:image:alt" content="The Waystead waymark — a W of two upward chevrons with an amber dot at the summit." />
 
@@ -40,7 +40,7 @@
 
   <link rel="stylesheet" href="/css/styles.css" />
 
-  <!-- Organization structured data (Tech Spec §8) -->
+  <!-- Organization structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,12 +61,12 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ===================================================================
-       Header — neutral chrome (ink on paper). Waymark + wordmark + nav.
+       Header — neutral chrome (ink on paper).
        =================================================================== -->
   <header class="site-header">
-    <div class="container site-header__inner">
+    <div class="wrap site-header__inner">
       <a class="brand" href="/" aria-label="Waystead — home">
-        <svg class="waymark" viewBox="0 0 100 100" width="30" height="30" fill="none" aria-hidden="true" focusable="false">
+        <svg class="brand__mark" viewBox="0 0 100 100" width="34" height="34" fill="none" aria-hidden="true" focusable="false">
           <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#1B1A20" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
           <circle cx="50" cy="20" r="7.5" fill="#F2A31D"></circle>
         </svg>
@@ -74,7 +74,11 @@
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18"></path>
+          <path d="M3 12h18"></path>
+          <path d="M3 18h18"></path>
+        </svg>
       </button>
 
       <nav class="nav" id="primary-nav" aria-label="Primary">
@@ -82,7 +86,7 @@
           <li><a class="nav__link" href="#idea">The idea</a></li>
           <li><a class="nav__link" href="#products">Products</a></li>
           <li><a class="nav__link" href="#about">About</a></li>
-          <li><a class="nav__link" href="#contact">Contact</a></li>
+          <li><a class="nav__link nav__link--btn" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -90,26 +94,31 @@
 
   <main id="main">
     <!-- =================================================================
-         Hero — neutral chrome. Waymark, wordmark, tagline, support line.
+         Hero — waymark, wordmark, "Know the way.", supporting line.
          ================================================================= -->
-    <section class="hero container" aria-labelledby="hero-title">
-      <svg class="hero__mark" viewBox="0 0 100 100" width="96" height="96" fill="none" role="img" aria-label="Waystead waymark">
-        <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#1B1A20" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <svg class="hero__mark" viewBox="0 0 100 100" fill="none" role="img" aria-label="Waystead waymark">
+        <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#1B1A20" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
         <circle cx="50" cy="20" r="7.5" fill="#F2A31D"></circle>
       </svg>
-      <h1 class="hero__wordmark" id="hero-title">Waystead</h1>
-      <p class="hero__tagline">Know the way.</p>
-      <p class="hero__support">A family of calm, purposeful tools that help families and learners find their footing — and keep moving in the right direction.</p>
+      <span class="wordmark hero__wordmark">Waystead</span>
+      <h1 class="hero__title" id="hero-title">Know the way.</h1>
+      <p class="hero__lede">A family of products that help you find your footing and keep moving forward — one waypoint at a time.</p>
     </section>
 
     <!-- =================================================================
-         The idea — brand story.
+         The idea
          ================================================================= -->
-    <section class="section idea" id="idea" aria-labelledby="idea-title">
-      <div class="container idea__inner">
-        <span class="eyebrow">The idea</span>
-        <h2 id="idea-title">A steady place to start, and a clear way forward.</h2>
-        <p>A <strong>waystead</strong> is a resting point on a journey — somewhere to take stock before the next stretch of the path. That is what we build: tools that bring order to busy family life and learning, without the noise. Each one stands on its own, yet shares the same compass. Whatever you reach for, you should always <strong>know the way</strong>.</p>
+    <section class="idea" id="idea" aria-labelledby="idea-title">
+      <div class="wrap">
+        <div class="idea__inner">
+          <p class="eyebrow eyebrow--center">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            <span class="eyebrow__label">The idea</span>
+          </p>
+          <h2 class="idea__title" id="idea-title">A point on the path.</h2>
+          <p class="idea__body">Every Waystead product begins from the same picture: you are here, and there is a way forward. The amber dot marks the present. The route leads on. Whatever the task — a busy family week, the road to the 11+, a decision that matters — we make the next step clear and keep you moving, calmly, one waypoint at a time.</p>
+        </div>
       </div>
     </section>
 
@@ -117,165 +126,216 @@
          Products
          ---------------------------------------------------------------
          SINGLE SOURCE OF TRUTH for product data (Tech Spec §5.1).
-         Only `live: true` products are rendered below. To LAUNCH a
-         product: set live:true, add its href, then uncomment its card
-         in the grid AND in the footer "Products" list. Nothing else.
+         Only `live: true` products render. To LAUNCH a product: set
+         live:true + future:false, add its href/host, then uncomment its
+         card below AND its footer entry. The grid column count follows
+         the number of live cards automatically.
 
            const products = [
-             { slug:'scheduler', descriptor:'Scheduler', live:true,  accent:'indigo',
-               tagline:"Your family's week, mapped.", href:'https://scheduler.waystead.co.uk' },
-             { slug:'learning',  descriptor:'Learning',  live:true,  accent:'teal',
-               tagline:'Clear steps to 11+.',          href:'https://learn.waystead.co.uk' },
+             { slug:'scheduler', descriptor:'Scheduler', live:true,  future:false,
+               tagline:"Your family's week, mapped.",
+               desc:"A calm command-centre for the family week. Everyone's plans in one place, mapped out at a glance.",
+               href:'https://scheduler.waystead.co.uk', host:'scheduler.waystead.co.uk' },
+             { slug:'learning',  descriptor:'Learning',  live:true,  future:false,
+               tagline:'Clear steps to 11+.',
+               desc:'Printable English resources for KS2 and the 11+. Exam-style practice, every page with a mark scheme.',
+               href:'https://learn.waystead.co.uk', host:'learn.waystead.co.uk' },
              // --- Hidden until launch: do NOT render while live:false ---
-             { slug:'tutoring',   descriptor:'Tutoring',   live:false, accent:'amber',
-               tagline:'One-to-one, one step at a time.', href:'' },
-             { slug:'consulting', descriptor:'Consulting', live:false, accent:'slate',
-               tagline:'A steadier way to decide.',        href:'' },
+             { slug:'tutoring',   descriptor:'Tutoring',   live:false, future:true,
+               tagline:'One-to-one, one step at a time.',
+               desc:'Personal tuition that meets a child where they are and builds steadily from there.',
+               href:'', host:'' },
+             { slug:'consulting', descriptor:'Consulting', live:false, future:true,
+               tagline:'A steadier way to decide.',
+               desc:'Considered guidance for teams and founders working out their way forward.',
+               href:'', host:'' },
            ];
+
+         NOTE: the Design's "Four ways forward." heading + 4-card grid and
+         its greyed Tutoring/Consulting footer links are intentionally NOT
+         reproduced — spec §5.1 forbids surfacing in-development products.
+         Heading/intro adapted to the two live products accordingly.
          ================================================================= -->
-    <section class="section products" id="products" aria-labelledby="products-title">
-      <div class="container">
-        <div class="products__head">
-          <span class="eyebrow">Products</span>
-          <h2 id="products-title">One family. One direction.</h2>
-          <p>Pick the tool you need today. They share a look, a logic, and a promise — so moving between them always feels familiar.</p>
+    <section class="products" id="products" aria-labelledby="products-title">
+      <div class="wrap">
+      <div class="products__head">
+        <div>
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            <span class="eyebrow__label">Products</span>
+          </p>
+          <h2 class="products__title" id="products-title">Two ways forward.</h2>
         </div>
+        <p class="products__intro">Two are live today, sharing one mark, one voice, one way of working.</p>
+      </div>
 
-        <div class="product-grid">
-          <!-- LIVE: Scheduler (indigo) -->
-          <a class="card card--indigo" href="https://scheduler.waystead.co.uk">
-            <span class="card__badge" aria-hidden="true">
-              <svg viewBox="0 0 100 100" width="28" height="28" fill="none">
-                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+      <div class="product-grid">
+        <!-- LIVE: Scheduler (indigo) -->
+        <article class="card" data-product="scheduler">
+          <span class="card__rail" aria-hidden="true"></span>
+          <div class="card__top">
+            <div class="card__brand">
+              <svg class="card__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
                 <circle cx="50" cy="20" r="7.5" fill="#F2A31D"></circle>
               </svg>
-            </span>
-            <span class="card__brand">
-              <span class="card__wordmark">Waystead</span>
-              <span class="card__descriptor">Scheduler</span>
-            </span>
-            <p class="card__tagline">Your family's week, mapped.</p>
-            <span class="card__cta">Open Scheduler <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
+              <div class="card__id">
+                <span class="wordmark card__wordmark">Waystead</span>
+                <span class="card__descriptor">Scheduler</span>
+              </div>
+            </div>
+            <span class="pill pill--live"><span class="pill__dot" aria-hidden="true"></span>Live</span>
+          </div>
+          <h3 class="card__tagline">Your family's week, mapped.</h3>
+          <p class="card__desc">A calm command-centre for the family week. Everyone's plans in one place, mapped out at a glance.</p>
+          <div class="card__foot">
+            <a class="card__cta" href="https://scheduler.waystead.co.uk">Visit scheduler.waystead.co.uk<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+          </div>
+        </article>
 
-          <!-- LIVE: Learning (teal) -->
-          <a class="card card--teal" href="https://learn.waystead.co.uk">
-            <span class="card__badge" aria-hidden="true">
-              <svg viewBox="0 0 100 100" width="28" height="28" fill="none">
-                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <!-- LIVE: Learning (teal) -->
+        <article class="card" data-product="learning">
+          <span class="card__rail" aria-hidden="true"></span>
+          <div class="card__top">
+            <div class="card__brand">
+              <svg class="card__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
                 <circle cx="50" cy="20" r="7.5" fill="#F2A31D"></circle>
               </svg>
-            </span>
-            <span class="card__brand">
-              <span class="card__wordmark">Waystead</span>
-              <span class="card__descriptor">Learning</span>
-            </span>
-            <p class="card__tagline">Clear steps to 11+.</p>
-            <span class="card__cta">Open Learning <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
+              <div class="card__id">
+                <span class="wordmark card__wordmark">Waystead</span>
+                <span class="card__descriptor">Learning</span>
+              </div>
+            </div>
+            <span class="pill pill--live"><span class="pill__dot" aria-hidden="true"></span>Live</span>
+          </div>
+          <h3 class="card__tagline">Clear steps to 11+.</h3>
+          <p class="card__desc">Printable English resources for KS2 and the 11+. Exam-style practice, every page with a mark scheme.</p>
+          <div class="card__foot">
+            <a class="card__cta" href="https://learn.waystead.co.uk">Visit learn.waystead.co.uk<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+          </div>
+        </article>
 
-          <!-- ============================================================
-               HIDDEN UNTIL LAUNCH — do not render while live:false.
-               Uncomment a block (and its footer entry) the day it ships.
+        <!-- ============================================================
+             HIDDEN UNTIL LAUNCH — uncomment a block (and its footer entry)
+             when the product ships. The "In development" pill + clock CTA
+             below are the reusable card's future state, ready to use.
 
-          <a class="card card--amber" href="REPLACE_WITH_HREF">
-            <span class="card__badge" aria-hidden="true">
-              <svg viewBox="0 0 100 100" width="28" height="28" fill="none">
-                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <article class="card" data-product="tutoring">
+          <span class="card__rail" aria-hidden="true"></span>
+          <div class="card__top">
+            <div class="card__brand">
+              <svg class="card__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
                 <circle cx="50" cy="20" r="7.5" fill="#F2A31D"></circle>
               </svg>
-            </span>
-            <span class="card__brand">
-              <span class="card__wordmark">Waystead</span>
-              <span class="card__descriptor">Tutoring</span>
-            </span>
-            <p class="card__tagline">One-to-one, one step at a time.</p>
-            <span class="card__cta">Open Tutoring <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
+              <div class="card__id">
+                <span class="wordmark card__wordmark">Waystead</span>
+                <span class="card__descriptor">Tutoring</span>
+              </div>
+            </div>
+            <span class="pill pill--soon">In development</span>
+          </div>
+          <h3 class="card__tagline">One-to-one, one step at a time.</h3>
+          <p class="card__desc">Personal tuition that meets a child where they are and builds steadily from there.</p>
+          <div class="card__foot">
+            <span class="card__soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>In development — finding its feet.</span>
+          </div>
+        </article>
 
-          <a class="card card--slate" href="REPLACE_WITH_HREF">
-            <span class="card__badge" aria-hidden="true">
-              <svg viewBox="0 0 100 100" width="28" height="28" fill="none">
-                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <article class="card" data-product="consulting">
+          <span class="card__rail" aria-hidden="true"></span>
+          <div class="card__top">
+            <div class="card__brand">
+              <svg class="card__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+                <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
                 <circle cx="50" cy="20" r="7.5" fill="#F2A31D"></circle>
               </svg>
-            </span>
-            <span class="card__brand">
-              <span class="card__wordmark">Waystead</span>
-              <span class="card__descriptor">Consulting</span>
-            </span>
-            <p class="card__tagline">A steadier way to decide.</p>
-            <span class="card__cta">Open Consulting <span class="arrow" aria-hidden="true">→</span></span>
-          </a>
-               ============================================================ -->
-        </div>
+              <div class="card__id">
+                <span class="wordmark card__wordmark">Waystead</span>
+                <span class="card__descriptor">Consulting</span>
+              </div>
+            </div>
+            <span class="pill pill--soon">In development</span>
+          </div>
+          <h3 class="card__tagline">A steadier way to decide.</h3>
+          <p class="card__desc">Considered guidance for teams and founders working out their way forward.</p>
+          <div class="card__foot">
+            <span class="card__soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>In development — finding its feet.</span>
+          </div>
+        </article>
+             ============================================================ -->
+      </div>
       </div>
     </section>
 
     <!-- =================================================================
-         About — founder/company. Owner-supplied; placeholder until given.
+         About
          ================================================================= -->
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="container about__inner">
-        <span class="eyebrow">About</span>
-        <h2 id="about-title">Built by one family, for many.</h2>
-        <p class="placeholder"><em>[Placeholder — founder paragraph to be supplied by the owner. Do not invent biographical details. Replace this block with the approved About copy.]</em></p>
+    <section class="wrap about" id="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <p class="eyebrow">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          <span class="eyebrow__label">About</span>
+        </p>
+        <h2 class="about__title" id="about-title">Built by people who've done the work.</h2>
+        <p class="about__body">Waystead is a small, independent studio run by two people whose backgrounds complement each other: over twenty years in engineering — designing and delivering large-scale network and telecoms systems — and a decade in education, tutoring and running a learning centre. Along the way we've started businesses of our own, and mentored others starting theirs.</p>
+        <p class="about__body">We're taking that experience — engineering rigour, teaching craft, and the hard-won lessons of building from scratch — and turning it into tools that help people reach their own goals. Each product stands on its own, yet all share one aim: to make a demanding thing clearer, and keep you moving toward what matters. And we're only getting started — building a growing family of solutions to help more people, in more ways.</p>
       </div>
     </section>
 
     <!-- =================================================================
          Contact
          ================================================================= -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact__inner">
-        <span class="eyebrow">Contact</span>
-        <h2 id="contact-title">Say hello.</h2>
-        <p>Questions, ideas, or just want to know where we're headed? We'd love to hear from you.</p>
-        <a class="btn" href="mailto:hello@waystead.co.uk">hello@waystead.co.uk</a>
+    <section class="wrap contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner">
+        <p class="eyebrow eyebrow--center">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          <span class="eyebrow__label">Contact</span>
+        </p>
+        <h2 class="contact__title" id="contact-title">Say hello.</h2>
+        <p class="contact__lede">Questions, partnerships, or just curious about the way ahead — we read everything.</p>
+        <a class="contact__email" href="mailto:hello@waystead.co.uk">hello@waystead.co.uk</a>
       </div>
     </section>
   </main>
 
   <!-- ===================================================================
-       Footer — neutral chrome. Wordmark, LIVE products only, contact.
+       Footer — neutral chrome (paper-deep). LIVE products only.
        =================================================================== -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="wrap">
       <div class="site-footer__top">
-        <div>
-          <a class="brand" href="/" aria-label="Waystead — home">
-            <svg class="waymark" viewBox="0 0 100 100" width="26" height="26" fill="none" aria-hidden="true" focusable="false">
+        <div class="site-footer__brand">
+          <div class="site-footer__brandrow">
+            <svg class="brand__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
               <path d="M16 34 L34 70 L50 26 L66 70 L84 34" stroke="#1B1A20" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
               <circle cx="50" cy="20" r="7.5" fill="#F2A31D"></circle>
             </svg>
             <span class="wordmark">Waystead</span>
-          </a>
-          <p class="site-footer__tagline">Know the way.</p>
+          </div>
+          <p class="site-footer__tag">Know the way.</p>
         </div>
 
-        <nav class="footer-nav" aria-label="Footer">
-          <div class="footer-nav__col">
-            <h3>Products</h3>
-            <ul>
-              <!-- LIVE products only. Add an entry here when a product launches. -->
-              <li><a href="https://scheduler.waystead.co.uk">Scheduler</a></li>
-              <li><a href="https://learn.waystead.co.uk">Learning</a></li>
-            </ul>
+        <nav class="site-footer__cols" aria-label="Footer">
+          <div class="footer-col">
+            <span class="footer-col__head">Products</span>
+            <!-- LIVE products only (spec §5.1). Add an entry when a product launches. -->
+            <a href="https://scheduler.waystead.co.uk">Scheduler</a>
+            <a href="https://learn.waystead.co.uk">Learning</a>
           </div>
-          <div class="footer-nav__col">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="#idea">The idea</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="mailto:hello@waystead.co.uk">Contact</a></li>
-            </ul>
+          <div class="footer-col">
+            <span class="footer-col__head">Company</span>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:hello@waystead.co.uk">hello@waystead.co.uk</a>
           </div>
         </nav>
       </div>
 
       <div class="site-footer__bottom">
-        <span>&copy; <span id="year">2026</span> Waystead. All rights reserved.</span>
-        <span>Know the way.</span>
+        <span>&copy; <span id="year">2026</span> Waystead · An independent studio</span>
+        <span>hello@waystead.co.uk</span>
       </div>
     </div>
   </footer>
