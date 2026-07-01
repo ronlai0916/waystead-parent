@@ -1,0 +1,11 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: waystead-parent-web
+    restart: unless-stopped
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    networks: [web]
+networks:
+  web:
+    external: true
