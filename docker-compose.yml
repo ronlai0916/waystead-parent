@@ -1,6 +1,6 @@
 services:
   web:
-    image: nginx:alpine
+    build: ./docker/nginx-patched
     container_name: waystead-parent-web
     restart: unless-stopped
     volumes:
